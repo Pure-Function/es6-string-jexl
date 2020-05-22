@@ -1,0 +1,47 @@
+{
+  "name": "es6-string-jexl",
+  "displayName": "es6-string-jexl",
+  "description": "Highlight jexl language in ES6 template literals",
+  "version": "1.0.1",
+  "publisher": "pure-function",
+  "icon": "docs/logo.png",
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "galleryBanner": {
+    "color": "#dedede",
+    "theme": "light"
+  },
+  "repository": {
+    "url": "https://github.com/pure-function/es6-string-jexl"
+  },
+  "bugs": {
+    "url": "https://github.com/pure-function/es6-string-jexl/issues"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "jexl",
+    "es6",
+    "lit-jexl",
+    "lit-html"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.js",
+          "source.ts",
+          "source.jsx",
+          "source.tsx"
+        ],
+        "scopeName": "inline.es6-jexl",
+        "path": "./syntaxes/es6-inline-jexl.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.javascript": "javascript"
+        }
+      }
+    ]
+  }
+}
